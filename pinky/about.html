@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Satellite Telemetry Data Visualization Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a192f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #112240;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
+        }
+        h1, h2 {
+            color: #64ffda;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .feature {
+            background: #233554;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #0a192f;
+            background-color: #64ffda;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn-home:hover {
+            background-color: #52e0c4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: #112240;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            color: #64ffda;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            color: #64ffda;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1> Satellite Telemetry Data Visualisation Tool</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>🛰️ About the Satellite Telemetry Data Visualization Tool</h1>
+        
+        <p>The <strong>Satellite Telemetry Data Visualization Tool</strong> is a web-based platform designed to **process, analyze, and visualize real-time telemetry data from satellites**. It helps engineers, scientists, and mission controllers monitor satellite health and performance efficiently.</p>
+
+        <h2>🌟 Key Features</h2>
+        <div class="feature"><strong>🚀 Real-Time Data Processing:</strong> Parses telemetry packets and displays critical parameters instantly.</div>
+        <div class="feature"><strong>📊 Interactive Graphs & Charts:</strong> Visualizes battery levels, temperature, signal strength, and more.</div>
+        <div class="feature"><strong>📡 Live Satellite Position Tracking:</strong> Uses GPS coordinates to map the satellite’s location dynamically.</div>
+        <div class="feature"><strong>⚡ Status Alerts:</strong> Notifies users about anomalies in battery health, temperature, or radio signals.</div>
+        <div class="feature"><strong>🔍 Historical Data Analysis:</strong> Stores past telemetry data for trend analysis and anomaly detection.</div>
+
+        <h2>🛠️ Technology Stack</h2>
+        <p><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js</p>
+        <p><strong>Data Visualization:</strong> Chart.js, D3.js</p>
+        <p><strong>Backend:</strong> Node.js, Express.js</p>
+        <p><strong>Database:</strong> MySQL (for storing telemetry history)</p>
+
+        <h2>🚀 How It Works?</h2>
+        <p>1️⃣ **Telemetry packets** are received from the satellite (binary files or real-time data stream).<br>
+        2️⃣ The tool **decodes and extracts** data like temperature, battery health, and GPS coordinates.<br>
+        3️⃣ The **dashboard visualizes** this data with graphs, charts, and alerts.<br>
+        4️⃣ Users can **analyze historical trends** to detect satellite anomalies.</p>
+
+        <h2>🎯 Benefits</h2>
+        <p>✅ **Real-time monitoring** for quick decision-making.<br>
+           ✅ **Automated data visualization** reduces manual effort.<br>
+           ✅ **Helps detect issues early** to prevent mission failures.<br>
+           ✅ **User-friendly interface** for both engineers & researchers.</p>
+
+        <p><strong>Developed as part of a Satellite Telemetry Internship Project.</strong> 🚀</p>
+
+        <!-- Home Button -->
+        <a href="index.html" class="btn-home">🏠 Go to Home</a>
+
+    </div>
+
+</body>
+</html>
