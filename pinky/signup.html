@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up - Satellite Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body.auth-page {
+      background-image: url('3d-rendering-futuristic-technologies.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  </style>
+</head>
+<body class="auth-page">
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Satellite Telemetry Data Visualization Tool</h1>
+  </div>
+
+  <!-- Sign Up Form -->
+  <div class="signup-container">
+    <h1>Satellite Sign Up</h1>
+    <form id="signupForm" method="POST" action="signup.php">
+      <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+      <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+      <input type="text" id="username" name="username" placeholder="Username" required><br>
+      <input type="password" id="password" name="password" placeholder="Password" required><br>
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+
+  <!-- Go to Home Button -->
+  <a href="index.html" class="home-btn">Go to Home</a>
+</body>
+</html>

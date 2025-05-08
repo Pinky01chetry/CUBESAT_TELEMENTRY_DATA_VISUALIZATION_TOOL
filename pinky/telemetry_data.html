@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>View Telemetry Data - Admin Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a192f, #112240);
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .header {
+      width: 100%;
+      padding: 20px;
+      background-color: #112240;
+      text-align: center;
+      border-bottom: 2px solid #64ffda;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      color: #64ffda;
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: #112240;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #64ffda;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #64ffda;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0a192f;
+      color: #64ffda;
+    }
+
+    td {
+      background-color: #1a2b3c;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #64ffda;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Telemetry Data Overview</h1>
+  </div>
+
+  <div class="container">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Satellite</th>
+        <th>Timestamp</th>
+        <th>Temperature (°C)</th>
+        <th>Battery (%)</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Sat-Alpha</td>
+        <td>2025-04-29 10:32:00</td>
+        <td>42.5</td>
+        <td>87</td>
+        <td>Healthy</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Sat-Beta</td>
+        <td>2025-04-29 10:33:15</td>
+        <td>47.8</td>
+        <td>76</td>
+        <td>Warning</td>
+      </tr>
+    </table>
+
+    <a href="admin.html" class="back-link">← Back to Admin Dashboard</a>
+  </div>
+
+</body>
+</html>

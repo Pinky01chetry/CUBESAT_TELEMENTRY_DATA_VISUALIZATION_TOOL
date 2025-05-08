@@ -1,0 +1,138 @@
+/* Common Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0a192f, #112240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: #112240;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #64ffda;
+  font-size: 24px;
+}
+
+/* Form Container */
+.login-container,
+.signup-container {
+  background: #112240;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #64ffda;
+  width: 370px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.login-container h1,
+.signup-container h1 {
+  color: #64ffda;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.login-container input,
+.signup-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  background: #0a192f;
+  border: 2px solid #64ffda;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-container input:focus,
+.signup-container input:focus {
+  border-color: #52d3b8;
+  box-shadow: 0 0 8px #52d3b8;
+  background: #1a2a41;
+}
+
+.login-container button,
+.signup-container button {
+  width: 100%;
+  padding: 12px;
+  background: #64ffda;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #0a192f;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover,
+.signup-container button:hover {
+  background: #52d3b8;
+  transform: translateY(-2px);
+}
+
+.login-container p,
+.signup-container p {
+  margin-top: 20px;
+  color: #a9b3c1;
+  font-size: 14px;
+}
+
+.login-container p a,
+.signup-container p a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+.login-container p a:hover,
+.signup-container p a:hover {
+  text-decoration: underline;
+}
+
+/* Go to Home Button */
+.home-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #64ffda;
+  color: #0a192f;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background-color: #52d3b8;
+}
+
+body.auth-page {
+  background-image: url('3d-rendering-futuristic-technologies.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
